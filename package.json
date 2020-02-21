@@ -1,0 +1,44 @@
+{
+  "name": "hapi-contacts",
+  "version": "1.0.0",
+  "description": "A hAPI to keep your contacts in order",
+  "main": "index.js",
+  "dependencies": {
+    "@hapi/boom": "^9.0.0",
+    "@hapi/code": "^8.0.1",
+    "@hapi/glue": "^7.0.0",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.0",
+    "@hapi/vision": "^6.0.0",
+    "hapi-pino": "^6.5.0",
+    "hapi-swagger": "^12.1.0",
+    "joi-objectid": "^3.0.1",
+    "joigoose": "^7.0.0",
+    "mongoose": "^5.9.1"
+  },
+  "devDependencies": {
+    "@hapi/lab": "^22.0.3",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "env-cmd -f ./config/test.env lab -t 100",
+    "start": "node index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amda-phd/hapi-contacts.git"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "hapi"
+  ],
+  "author": "amda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amda-phd/hapi-contacts/issues"
+  },
+  "homepage": "https://github.com/amda-phd/hapi-contacts#readme"
+}
